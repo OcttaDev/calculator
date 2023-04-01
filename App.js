@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Title from './src/components/Title';
+import Main from './src/components/Main'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={style.container}>
+      <Title text="ONEBITHEALTH"/>
+      <Main/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    flexDirection: "column", 
     justifyContent: 'center',
+    alignItems: 'center',
+    gap: 10, 
   },
-});
+})
